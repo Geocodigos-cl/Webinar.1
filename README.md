@@ -100,6 +100,7 @@ p1 <- ggplot(df, aes( x = list1, y = list2)) + geom_point(color = "red") +
 ```
 #### Scrip N°4  Estructura de un data frame.
 ```r
+# Para observar el data frame en la consola de RStudio escribimos:
 df
 ```
 #### Scrip N°5 Importar / exportar un data frame
