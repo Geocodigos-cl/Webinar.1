@@ -3,8 +3,7 @@ En este webinar se explicarán los elementos básicos de R y el GUI RStudio, los
 están enumerados en el siguiente orden.
 
 #### Scrip N°1 Paquetes
-##### Ejemplo de Paquete (Packages)
-##### https://cran.r-project.org/
+##### Ejemplo de Paquete (Packages) descargables en [Cran](https://cran.r-project.org/)
 ```r
 install.packages("fun")
 library(fun)
@@ -53,8 +52,7 @@ x <- c(1:7)
 vec1 <- c(x,a)
 vec2 <- c(a,x)
 ```
-##### Variable (vector) de caracteres, que serán usados para nombres de filas en un 
-##### marco de datos
+##### Variable (vector) de caracteres, que serán usados para nombres de filas en un marco de datos
 ```r
 names <- c("a","b","c","d", "e", "f", "g")
 ```
@@ -105,10 +103,9 @@ p1 <- ggplot(df, aes( x = list1, y = list2)) + geom_point(color = "red") +
 df
 ```
 #### Scrip N°5 Importar / exportar un data frame
-
-##### Para trabajar esta informacion debemos seleccionar al carpeta de destino
-##### donde se descargara el data frame externo. Para esto realizaremos:
 ```r
+# Para trabajar esta informacion debemos seleccionar al carpeta de destino 
+# donde se descargara el data frame externo. Para esto realizaremos:
 setwd("la/ruta/a/tu/carpeta/")
 
 install.packages("RCurl")
@@ -128,8 +125,8 @@ dim(df)
 plot(df$TimeScan.mNDWImax)
 ```
 ##### Exportar data frame
-# el nombre del archivo y su extension pueden variar.
 ```r
+# el nombre del archivo y su extension pueden variar.
 write.csv(df, "output.csv")
 ```
 #### Scrip N°6 Creación de data frame
@@ -159,8 +156,7 @@ x[-len]
 ```r
 idx <- c(1,4,6)
 ```
-##### Realizamos una busqueda en el vector numero x en las posiciones dadas por la 
-##### variable idx
+##### Realizamos una busqueda en el vector numero x en las posiciones dadas por la variable idx
 ```r
 x[idx]
 ```
