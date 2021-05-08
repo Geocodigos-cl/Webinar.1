@@ -246,9 +246,8 @@ head(df)
 ##### Mirar data frame con una condición
 ```r
 View(df[80:105,c("plot","measure1","measure2")])
-```r
+```
 #### Scrip N°8 Función plot y Parámetros plot
-
 ##### Hacemos plot para observar creado
 ```r
 plot(prec_avg,
@@ -259,7 +258,7 @@ plot(prec_avg,
 ##### Agregar lineas en el plot
 ```r
 lines(lowess(prec_avg, f = .2))
-```r
+```
 ##### ggplot test df plot
 ```r
 list1 <- sample(100)
