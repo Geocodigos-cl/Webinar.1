@@ -201,8 +201,7 @@ m1[2,]
 m1[,2]
 m1[2,2]
 ```
-##### Creación de una matrix desde un vector de datos 
-##### -> convertir a Data Frame -> agregar nombres de columnas
+##### Creación de una matrix desde un vector de datos -> convertir a Data Frame -> agregar nombres de columnas
 ```r
 numbers_1 <- rnorm(1000, mean = 0, sd = 1)
 mat_1 <- matrix(numbers_1, nrow = 250, ncol = 4)
