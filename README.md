@@ -109,6 +109,7 @@ df
 # donde se descargara el data frame externo. Para esto realizaremos:
 setwd("la/ruta/a/tu/carpeta/")
 
+# Para este ejercicio instalaremos la libreria RCurl
 install.packages("RCurl")
 library(RCurl)
 ```
@@ -127,7 +128,7 @@ plot(df$TimeScan.mNDWImax)
 ```
 ##### Exportar data frame
 ```r
-# el nombre del archivo y su extension pueden variar.
+# el nombre del archivo, la carpeta donde se guardara y su extension pueden variar.
 write.csv(df, "output.csv")
 ```
 #### Scrip N°6 Creación de data frame
@@ -193,7 +194,6 @@ sort(x,decreasing=T)
 ##### Bonus, Datos en una matrix
 ```r
 m1 <- matrix(x, nrow = 10, byrow)
-
 m1[2,]
 m1[,2]
 m1[2,2]
@@ -217,10 +217,10 @@ test
 ```
 ##### Todos hacen lo mismo
 ```r
+# Probando diferentes formas de observar informacion de un data frame
 test[,1]
 test[,"A"]
 test$A
-
 test$A[1:2]
 test[2:3,1:2]
 ```
