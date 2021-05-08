@@ -1,4 +1,4 @@
-# 1.- Paquetes
+# Paquetes
 # Ejemplo de Paquete (Packages)
 # https://cran.r-project.org/
 install.packages("fun")
